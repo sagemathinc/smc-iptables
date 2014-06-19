@@ -1,5 +1,5 @@
 #!/bin/bash
 
-iptables -F
+set -x
 
 iptables-restore < vm_nat_rules

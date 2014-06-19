@@ -1,3 +1,35 @@
+# github
+# source: https://help.github.com/articles/what-ip-addresses-does-github-use-that-i-should-whitelist
+192.30.252.0/22
+
+# dropbox
+# source: http://whois.arin.net/rest/org/DROPB/nets
+199.47.216.0/22
+108.160.160.0/20
+209.99.70.0/24
+
+# bitbucket
+# source: https://confluence.atlassian.com/display/BITBUCKET/What+are+the+Bitbucket+IP+addresses+I+should+use+to+configure+my+corporate+firewall
+131.103.20.167
+131.103.20.168
+131.103.20.169
+131.103.20.170
+ 
+# code.google.com
+# source: dig +short code.google.com
+173.194.33.40
+173.194.33.39
+173.194.33.41
+173.194.33.36
+173.194.33.38
+173.194.33.33
+173.194.33.34
+173.194.33.46
+173.194.33.35
+173.194.33.37
+173.194.33.32
+
+
 # boxen
 128.208.160.197
 
