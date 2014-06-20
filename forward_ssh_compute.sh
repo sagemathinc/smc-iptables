@@ -24,4 +24,4 @@ echo "Forwarding host port $host_port to $destination_ip:$destination_port."
 iptables -v -I FORWARD -m state -d $vm_network --state NEW,RELATED,ESTABLISHED -j ACCEPT
 
 # forward port from host to vm
-iptables -v -t nat -I PREROUTING -p tcp --dport $host_port -j DNAT --to-destination $destination_ip:$destination_port
+iptables -v -t nat -I PREROUTING -p tcp -d $HOSTNAME.sagedev.org --dport $host_port -j DNAT --to-destination $destination_ip:$destination_port
