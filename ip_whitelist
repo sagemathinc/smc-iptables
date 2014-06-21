@@ -1,3 +1,19 @@
+# ubuntu packages
+91.189.91.14
+91.189.91.15
+91.189.91.13
+91.189.92.152
+91.189.92.200
+91.189.92.201
+91.189.94.173
+91.189.95.3
+91.189.95.83
+209.6.3.210
+78.47.0.11
+
+
+
+
 # google compute engine nodes
 108.59.81.168
 162.222.177.254
@@ -63,6 +79,13 @@
 173.194.33.37
 173.194.33.32
 
+# sourceforge
+# source: dig +short sourceforge.org
+216.34.181.60
+
+# git.sagemath.org and trac.sagemath.org
+# source: dig +short git.sagemath.org
+128.208.178.249
 
 # boxen
 128.208.160.197
