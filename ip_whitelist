@@ -67,6 +67,17 @@
 108.160.160.0/20
 209.99.70.0/24
 
+# dropbox download
+# source: dig +short dl.dropboxusercontent.com
+107.21.232.19
+75.101.147.81
+107.21.114.158
+50.16.243.41
+23.23.120.220
+23.21.113.169
+54.235.141.222
+204.236.226.117
+
 # bitbucket
 # source: https://confluence.atlassian.com/display/BITBUCKET/What+are+the+Bitbucket+IP+addresses+I+should+use+to+configure+my+corporate+firewall
 131.103.20.167
