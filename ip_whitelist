@@ -2,6 +2,10 @@
 # source:   dig +short pypi.python.org
 199.27.79.175
 
+# npm package manager
+# source:  dig +short registry.npmjs.org
+199.27.79.162
+
 
 # ubuntu packages
 91.189.91.14
