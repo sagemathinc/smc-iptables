@@ -1,3 +1,8 @@
+# pypi, so can install packages
+# source:   dig +short pypi.python.org
+199.27.79.175
+
+
 # ubuntu packages
 91.189.91.14
 91.189.91.15
