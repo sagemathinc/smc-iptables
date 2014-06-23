@@ -22,7 +22,7 @@ done < "$whitelist"
 iptables -v -A FORWARD -s 192.168.122.0/24 -j REJECT --reject-with icmp-net-prohibited
 
 # forward port 2222 to compute node
-./forward_ssh_compute.sh
+./forward_ssh_to_compute.sh
 
 
 
