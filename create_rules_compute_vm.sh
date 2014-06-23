@@ -2,8 +2,9 @@
 
 whitelist=ip_whitelist
 
-# allow libvirt-generated subnet
-iptables -v -I FORWARD -s 192.168.122.0/24 -d 192.168.122.0/24 -j ACCEPT
+
+# allow gce default subnet
+iptables -v -I OUTPUT -s 10.240.0.0/16 -d 10.240.0.0/16 -j ACCEPT
 
 # allow ip addresses in whitelist file (insert at start of chain)
 while read -r ip
@@ -15,14 +16,11 @@ do
     [[ -z "${ip}" ]] && continue
 
     # append rule
-    iptables -v -I FORWARD -s 192.168.122.0/24 -d $ip -j ACCEPT
+    iptables -v -I OUTPUT -d $ip -j ACCEPT
 done < "$whitelist"
 
 # block all non-whitelisted traffic originating from VMs
-iptables -v -A FORWARD -s 192.168.122.0/24 -j REJECT --reject-with icmp-net-prohibited
-
-# forward port 2222 to compute node
-./forward_ssh_to_compute.sh
+iptables -v -A OUTPUT -j REJECT --reject-with icmp-net-prohibited
 
 
 
