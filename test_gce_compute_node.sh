@@ -34,3 +34,6 @@ nc -zv cloud10.sagedev.org 2222
 
 echo -e "\n########## Ping a website on the whitelist"
 ping -q -c $NPING 199.27.79.175
+
+
+echo -e "\n########## All tests succeeded!"
