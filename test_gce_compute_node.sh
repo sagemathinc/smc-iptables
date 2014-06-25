@@ -32,6 +32,9 @@ nc -zv cloud10.sagedev.org 2222
 
 # test rejection of connections to an arbitrary internet address
 
+echo -e "\n########## Check ssh port on GCE devel node over public ip address"
+nc -zv 107.178.213.222 22
+
 echo -e "\n########## Ping a website on the whitelist"
 ping -q -c $NPING 199.27.79.175
 
