@@ -1,4 +1,4 @@
 #!/bin/bash
 
-. reload_default_rules.sh
-. create_rules.sh
+iptables -F
+. create_rules_compute_node.sh

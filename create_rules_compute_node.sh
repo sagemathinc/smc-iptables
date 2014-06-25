@@ -4,7 +4,14 @@ whitelist=ip_whitelist
 
 
 # allow gce default subnet
-iptables -v -I OUTPUT -s 10.240.0.0/16 -d 10.240.0.0/16 -j ACCEPT
+iptables -v -I OUTPUT -d 10.240.0.0/16 -j ACCEPT
+
+# allow tinc subnets
+iptables -v -I OUTPUT -d 10.1.0.0/16 -j ACCEPT
+iptables -v -I OUTPUT -d 10.2.0.0/16 -j ACCEPT
+iptables -v -I OUTPUT -d 10.3.0.0/16 -j ACCEPT
+iptables -v -I OUTPUT -d 10.4.0.0/16 -j ACCEPT
+
 
 # allow ip addresses in whitelist file (insert at start of chain)
 while read -r ip
@@ -20,7 +27,7 @@ do
 done < "$whitelist"
 
 # block all non-whitelisted traffic originating from VMs
-iptables -v -A OUTPUT -j REJECT --reject-with icmp-net-prohibited
+iptables -v -A OUTPUT -m state --state NEW -j REJECT
 
 
 

@@ -1,3 +1,7 @@
+# gce dns server
+# source: /etc/resolv.conf on gce compute nodes
+169.254.169.254
+
 # pypi, so can install packages
 # source:   dig +short pypi.python.org
 199.27.79.175
