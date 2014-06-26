@@ -10,18 +10,14 @@ echo -e "\n########## Ping localhost"
 ping -q -c $NPING 127.0.0.1
 ping -q -c $NPING 127.0.1.1
 
-echo -e "\n########## Ping GCE DNS server"
-ping -q -c $NPING 169.254.169.254
+echo -e "\n########## Ping KVM host"
+ping -q -c $NPING 192.168.122.1
 
 echo -e "\n########## Ping UW host in Padelford DC"
 ping -q -c $NPING cloud1.sagedev.org
 
 echo -e "\n########## Ping UW host in 4545 DC"
 ping -q -c $NPING cloud10.sagedev.org
-
-echo -e "\n########## Ping GCE nodes over Google internal network"
-ping -q -c $NPING 10.240.14.23
-ping -q -c $NPING 10.240.84.244
 
 echo -e "\n########## Ping GCE compute nodes over Tinc"
 ping -q -c $NPING 10.3.1.5
@@ -32,7 +28,8 @@ ping -q -c $NPING 10.1.2.1
 ping -q -c $NPING 10.1.14.1
 
 echo -e "\n##########  Test port forwarding on UW hosts"
-nc -zv cloud10.sagedev.org 2222
+# nc -zv cloud10.sagedev.org 2222
+# nc -zv cloud1.sagedev.org 2222
 
 # test rejection of connections to an arbitrary internet address
 
