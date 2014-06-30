@@ -2,6 +2,11 @@
 
 whitelist=uid_whitelist
 
+if [[ ! -f $whitelist ]] ; then
+    echo 'uid_whitelist does not exist'
+    exit
+fi
+
 # allow ip addresses in whitelist file (insert at start of chain)
 while read -r uid
 do
