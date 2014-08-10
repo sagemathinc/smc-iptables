@@ -9,6 +9,10 @@
 # source: /etc/resolv.conf on gce compute nodes
 169.254.169.254
 
+# coursera: dig +short coursera.org; and class.coursera.org
+23.21.152.196
+107.21.206.124
+
 # pypi, so can install packages
 # source:   dig +short pypi.python.org
 199.27.79.175
@@ -17,6 +21,8 @@
 # source:  dig +short registry.npmjs.org
 199.27.79.162
 
+# Sloane's tables of integer sequences
+67.23.6.156
 
 # ubuntu packages
 91.189.91.14
