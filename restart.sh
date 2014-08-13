@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/smc-iptables
+cd /root/smc-iptables/
 
 iptables -F
 . create_rules_compute_node.sh
