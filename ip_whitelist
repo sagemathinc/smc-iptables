@@ -2,6 +2,11 @@
 127.0.0.1
 127.0.1.1
 
+
+# gap-system
+138.251.192.244
+138.251.192.245
+
 # for UW hosts: libvirt default network
 192.168.122.0/24
 
