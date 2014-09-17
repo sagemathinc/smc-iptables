@@ -22,6 +22,11 @@
 # dig www2.hawaii.edu
 128.171.224.150
 
+
+# requested by a univ in europe
+# dig +short gitlab.fit.cvut.cz
+147.32.232.218
+
 # pypi, so can install packages
 # source:   dig +short pypi.python.org
 199.27.79.175
