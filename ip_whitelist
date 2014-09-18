@@ -7,6 +7,10 @@
 138.251.192.244
 138.251.192.245
 
+# fresco: Coupled Reaction Channels Calculations -- requested by "mkarakoc"
+# dig +short www.fresco.org.uk
+131.227.115.98
+
 # for UW hosts: libvirt default network
 192.168.122.0/24
 
