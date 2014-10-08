@@ -35,7 +35,8 @@ echo "Host IP is $host_ip, forwarding port $host_port to $destination_ip:$destin
 # allow forwarding to vm network
 iptables -v -I FORWARD -m state -d $vm_network --state NEW,RELATED,ESTABLISHED -j ACCEPT
 
-# forward port from host to vm
-#iptables -v -t nat -I PREROUTING -p tcp -d $host_ip --dport $host_port -j DNAT --to-destination $destination_ip:$destination_port
+# forward incoming packets to vm
+iptables -v -t nat -I PREROUTING -p tcp             --dport $host_port -j DNAT --to-destination $destination_ip:$destination_port
 
-iptables -v -t nat -I PREROUTING -p tcp -d 127.0.0.1,127.0.1.1,$host_ip --dport $host_port -j DNAT --to-destination $destination_ip:$destination_port
+# forward outgoing packets destined for host's external ip (makes forwarding work on host itself)
+iptables -v -t nat -I OUTPUT     -p tcp -d $host_ip --dport $host_port -j DNAT --to-destination $destination_ip:$destination_port
