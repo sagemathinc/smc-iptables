@@ -26,6 +26,10 @@
 # dig www2.hawaii.edu
 128.171.224.150
 
+# stanford math
+# dig +short math.stanford.edu 
+171.64.38.20
+
 
 # requested by a univ in europe
 # dig +short gitlab.fit.cvut.cz
