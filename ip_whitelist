@@ -30,6 +30,9 @@
 # dig +short math.stanford.edu 
 171.64.38.20
 
+# colorado math
+# dig +short math.colorado.edu
+128.138.150.56
 
 # requested by a univ in europe
 # dig +short gitlab.fit.cvut.cz
