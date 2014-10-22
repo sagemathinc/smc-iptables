@@ -7,6 +7,9 @@
 138.251.192.244
 138.251.192.245
 
+#dig +short raw.githubusercontent.com
+23.235.46.133
+
 # fresco: Coupled Reaction Channels Calculations -- requested by "mkarakoc"
 # dig +short www.fresco.org.uk
 131.227.115.98
