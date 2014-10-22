@@ -7,8 +7,13 @@
 138.251.192.244
 138.251.192.245
 
-#dig +short raw.githubusercontent.com
+#raw.githubusercontent.com
 23.235.46.133
+199.27.79.133
+23.235.47.133
+
+#nbviewer.ipython.org
+162.209.115.155
 
 # fresco: Coupled Reaction Channels Calculations -- requested by "mkarakoc"
 # dig +short www.fresco.org.uk
@@ -44,6 +49,8 @@
 # pypi, so can install packages
 # source:   dig +short pypi.python.org
 199.27.79.175
+199.27.79.223
+
 
 # npm package manager
 # source:  dig +short registry.npmjs.org
