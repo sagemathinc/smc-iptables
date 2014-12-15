@@ -6,6 +6,8 @@
 # dig +short mygene.info # used from all nodes to get global DNS
 50.112.105.66
 54.245.224.76
+# dig +short eutils.ncbi.nlm.nih.gov
+130.14.29.110
 
 #cloudflare cdnjs
 #dig +short cdnjs.cloudflare.com
