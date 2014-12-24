@@ -2,6 +2,12 @@
 127.0.0.1
 127.0.1.1
 
+#  webservices.cahnrs.wsu.edu - from Bonner, William J <bbonner@wsu.edu>
+134.121.80.33
+134.121.80.217
+134.121.80.18
+134.121.86.3
+
 #mygene.info -- bioinformatics database requested
 # dig +short mygene.info # used from all nodes to get global DNS
 50.112.105.66
