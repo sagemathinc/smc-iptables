@@ -32,10 +32,15 @@
 138.251.192.244
 138.251.192.245
 
+# github
+# source: https://help.github.com/articles/what-ip-addresses-does-github-use-that-i-should-whitelist
+# which is unfortunately not true, since we need the below also!
+192.30.252.0/22
+
 #raw.githubusercontent.com
-23.235.46.133
+23.235.0.0/16
 199.27.79.133
-23.235.47.133
+185.31.18.133
 
 #nbviewer.ipython.org
 162.209.115.155
@@ -137,9 +142,6 @@
 74.125.25.109
 74.125.25.108
 
-# github
-# source: https://help.github.com/articles/what-ip-addresses-does-github-use-that-i-should-whitelist
-192.30.252.0/22
 
 # dropbox
 # source: http://whois.arin.net/rest/org/DROPB/nets
