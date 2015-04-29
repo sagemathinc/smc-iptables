@@ -1,3 +1,19 @@
+# temporary -- internal ips of web server nodes
+# echo 'import os; print("\n".join([os.popen("nslookup smc%sdc%s |grep \"Address: 10\""%(i,j)).read().split()[-1] for i in range(1,7) for j in [5,6]]))' | python
+10.240.97.10
+10.240.81.144
+10.240.220.8
+10.240.91.234
+10.240.137.201
+10.240.149.25
+10.240.248.84
+10.240.22.152
+10.240.84.228
+10.240.38.46
+10.240.208.13
+10.240.47.1
+10.240.217.168
+
 # localhost
 127.0.0.1
 127.0.1.1
